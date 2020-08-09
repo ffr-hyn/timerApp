@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C9E23F9824DFEAEE001258A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23F9724DFEAEE001258A7 /* AppDelegate.swift */; };
 		C9E23F9A24DFEAEE001258A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23F9924DFEAEE001258A7 /* SceneDelegate.swift */; };
-		C9E23F9C24DFEAEE001258A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23F9B24DFEAEE001258A7 /* ViewController.swift */; };
+		C9E23F9C24DFEAEE001258A7 /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23F9B24DFEAEE001258A7 /* StopWatchViewController.swift */; };
 		C9E23F9F24DFEAEE001258A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E23F9D24DFEAEE001258A7 /* Main.storyboard */; };
 		C9E23FA124DFEAF0001258A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E23FA024DFEAF0001258A7 /* Assets.xcassets */; };
 		C9E23FA424DFEAF0001258A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E23FA224DFEAF0001258A7 /* LaunchScreen.storyboard */; };
 		C9E23FAF24DFEAF0001258A7 /* timerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FAE24DFEAF0001258A7 /* timerAppTests.swift */; };
 		C9E23FBA24DFEAF0001258A7 /* timerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FB924DFEAF0001258A7 /* timerAppUITests.swift */; };
+		C9E23FC824E014B4001258A7 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FC724E014B4001258A7 /* AlarmViewController.swift */; };
+		C9E23FCA24E015AD001258A7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		C9E23F9424DFEAEE001258A7 /* timerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E23F9724DFEAEE001258A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E23F9924DFEAEE001258A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9E23F9B24DFEAEE001258A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9E23F9B24DFEAEE001258A7 /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		C9E23F9E24DFEAEE001258A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9E23FA024DFEAF0001258A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E23FA324DFEAF0001258A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		C9E23FB524DFEAF0001258A7 /* timerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E23FB924DFEAF0001258A7 /* timerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerAppUITests.swift; sourceTree = "<group>"; };
 		C9E23FBB24DFEAF0001258A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E23FC724E014B4001258A7 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				C9E23F9724DFEAEE001258A7 /* AppDelegate.swift */,
 				C9E23F9924DFEAEE001258A7 /* SceneDelegate.swift */,
-				C9E23F9B24DFEAEE001258A7 /* ViewController.swift */,
+				C9E23F9B24DFEAEE001258A7 /* StopWatchViewController.swift */,
 				C9E23F9D24DFEAEE001258A7 /* Main.storyboard */,
 				C9E23FA024DFEAF0001258A7 /* Assets.xcassets */,
 				C9E23FA224DFEAF0001258A7 /* LaunchScreen.storyboard */,
 				C9E23FA524DFEAF0001258A7 /* Info.plist */,
+				C9E23FC724E014B4001258A7 /* AlarmViewController.swift */,
+				C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */,
 			);
 			path = timerApp;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E23F9C24DFEAEE001258A7 /* ViewController.swift in Sources */,
+				C9E23FCA24E015AD001258A7 /* MainTabBarViewController.swift in Sources */,
+				C9E23FC824E014B4001258A7 /* AlarmViewController.swift in Sources */,
+				C9E23F9C24DFEAEE001258A7 /* StopWatchViewController.swift in Sources */,
 				C9E23F9824DFEAEE001258A7 /* AppDelegate.swift in Sources */,
 				C9E23F9A24DFEAEE001258A7 /* SceneDelegate.swift in Sources */,
 			);

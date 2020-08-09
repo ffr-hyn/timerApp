@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class StopWatchViewController: UIViewController {
+    let timerLabel = UILabel()
+    let startButton = UIButton()
+    let stopButton = UIButton()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
     }
-
-
 }
 
