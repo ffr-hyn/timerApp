@@ -17,6 +17,10 @@
 		C9E23FBA24DFEAF0001258A7 /* timerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FB924DFEAF0001258A7 /* timerAppUITests.swift */; };
 		C9E23FC824E014B4001258A7 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FC724E014B4001258A7 /* AlarmViewController.swift */; };
 		C9E23FCA24E015AD001258A7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */; };
+		C9E23FCD24E14339001258A7 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E23FCC24E14339001258A7 /* TinyConstraints.framework */; };
+		C9E23FCE24E14339001258A7 /* TinyConstraints.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E23FCC24E14339001258A7 /* TinyConstraints.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9E23FD824E15CEC001258A7 /* RapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FD624E15CEC001258A7 /* RapTableViewCell.swift */; };
+		C9E23FD924E15CEC001258A7 /* RapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E23FD724E15CEC001258A7 /* RapTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C9E23FCF24E14339001258A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9E23FCE24E14339001258A7 /* TinyConstraints.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C9E23F9424DFEAEE001258A7 /* timerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E23F9724DFEAEE001258A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +71,9 @@
 		C9E23FBB24DFEAF0001258A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9E23FC724E014B4001258A7 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		C9E23FCC24E14339001258A7 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		C9E23FD624E15CEC001258A7 /* RapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapTableViewCell.swift; sourceTree = "<group>"; };
+		C9E23FD724E15CEC001258A7 /* RapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RapTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E23FCD24E14339001258A7 /* TinyConstraints.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +109,7 @@
 				C9E23FAD24DFEAF0001258A7 /* timerAppTests */,
 				C9E23FB824DFEAF0001258A7 /* timerAppUITests */,
 				C9E23F9524DFEAEE001258A7 /* Products */,
+				C9E23FCB24E14339001258A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +126,7 @@
 		C9E23F9624DFEAEE001258A7 /* timerApp */ = {
 			isa = PBXGroup;
 			children = (
+				C9E23FD524E15BED001258A7 /* cell */,
 				C9E23F9724DFEAEE001258A7 /* AppDelegate.swift */,
 				C9E23F9924DFEAEE001258A7 /* SceneDelegate.swift */,
 				C9E23F9B24DFEAEE001258A7 /* StopWatchViewController.swift */,
@@ -112,6 +136,8 @@
 				C9E23FA524DFEAF0001258A7 /* Info.plist */,
 				C9E23FC724E014B4001258A7 /* AlarmViewController.swift */,
 				C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */,
+				C9E23FD624E15CEC001258A7 /* RapTableViewCell.swift */,
+				C9E23FD724E15CEC001258A7 /* RapTableViewCell.xib */,
 			);
 			path = timerApp;
 			sourceTree = "<group>";
@@ -134,6 +160,21 @@
 			path = timerAppUITests;
 			sourceTree = "<group>";
 		};
+		C9E23FCB24E14339001258A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9E23FCC24E14339001258A7 /* TinyConstraints.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9E23FD524E15BED001258A7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +185,8 @@
 				C9E23F9024DFEAEE001258A7 /* Sources */,
 				C9E23F9124DFEAEE001258A7 /* Frameworks */,
 				C9E23F9224DFEAEE001258A7 /* Resources */,
+				C9E23FCF24E14339001258A7 /* Embed Frameworks */,
+				C9E23FD024E1434A001258A7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -241,6 +284,7 @@
 				C9E23FA424DFEAF0001258A7 /* LaunchScreen.storyboard in Resources */,
 				C9E23FA124DFEAF0001258A7 /* Assets.xcassets in Resources */,
 				C9E23F9F24DFEAEE001258A7 /* Main.storyboard in Resources */,
+				C9E23FD924E15CEC001258A7 /* RapTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,12 +304,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C9E23FD024E1434A001258A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9E23F9024DFEAEE001258A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9E23FCA24E015AD001258A7 /* MainTabBarViewController.swift in Sources */,
+				C9E23FD824E15CEC001258A7 /* RapTableViewCell.swift in Sources */,
 				C9E23FC824E014B4001258A7 /* AlarmViewController.swift in Sources */,
 				C9E23F9C24DFEAEE001258A7 /* StopWatchViewController.swift in Sources */,
 				C9E23F9824DFEAEE001258A7 /* AppDelegate.swift in Sources */,
@@ -444,6 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96MNY962H4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = timerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +532,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96MNY962H4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = timerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
