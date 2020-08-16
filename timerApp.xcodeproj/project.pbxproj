@@ -19,8 +19,8 @@
 		C9E23FCA24E015AD001258A7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */; };
 		C9E23FCD24E14339001258A7 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E23FCC24E14339001258A7 /* TinyConstraints.framework */; };
 		C9E23FCE24E14339001258A7 /* TinyConstraints.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E23FCC24E14339001258A7 /* TinyConstraints.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9E23FD824E15CEC001258A7 /* RapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FD624E15CEC001258A7 /* RapTableViewCell.swift */; };
-		C9E23FD924E15CEC001258A7 /* RapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E23FD724E15CEC001258A7 /* RapTableViewCell.xib */; };
+		C9E23FE024E17979001258A7 /* RapTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E23FDE24E17979001258A7 /* RapTimeTableViewCell.swift */; };
+		C9E23FE124E17979001258A7 /* RapTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E23FDF24E17979001258A7 /* RapTimeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +72,8 @@
 		C9E23FC724E014B4001258A7 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		C9E23FCC24E14339001258A7 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
-		C9E23FD624E15CEC001258A7 /* RapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapTableViewCell.swift; sourceTree = "<group>"; };
-		C9E23FD724E15CEC001258A7 /* RapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RapTableViewCell.xib; sourceTree = "<group>"; };
+		C9E23FDE24E17979001258A7 /* RapTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapTimeTableViewCell.swift; sourceTree = "<group>"; };
+		C9E23FDF24E17979001258A7 /* RapTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RapTimeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,8 @@
 				C9E23FA524DFEAF0001258A7 /* Info.plist */,
 				C9E23FC724E014B4001258A7 /* AlarmViewController.swift */,
 				C9E23FC924E015AD001258A7 /* MainTabBarViewController.swift */,
-				C9E23FD624E15CEC001258A7 /* RapTableViewCell.swift */,
-				C9E23FD724E15CEC001258A7 /* RapTableViewCell.xib */,
+				C9E23FDE24E17979001258A7 /* RapTimeTableViewCell.swift */,
+				C9E23FDF24E17979001258A7 /* RapTimeTableViewCell.xib */,
 			);
 			path = timerApp;
 			sourceTree = "<group>";
@@ -283,8 +283,8 @@
 			files = (
 				C9E23FA424DFEAF0001258A7 /* LaunchScreen.storyboard in Resources */,
 				C9E23FA124DFEAF0001258A7 /* Assets.xcassets in Resources */,
+				C9E23FE124E17979001258A7 /* RapTimeTableViewCell.xib in Resources */,
 				C9E23F9F24DFEAEE001258A7 /* Main.storyboard in Resources */,
-				C9E23FD924E15CEC001258A7 /* RapTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E23FE024E17979001258A7 /* RapTimeTableViewCell.swift in Sources */,
 				C9E23FCA24E015AD001258A7 /* MainTabBarViewController.swift in Sources */,
-				C9E23FD824E15CEC001258A7 /* RapTableViewCell.swift in Sources */,
 				C9E23FC824E014B4001258A7 /* AlarmViewController.swift in Sources */,
 				C9E23F9C24DFEAEE001258A7 /* StopWatchViewController.swift in Sources */,
 				C9E23F9824DFEAEE001258A7 /* AppDelegate.swift in Sources */,

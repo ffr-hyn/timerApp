@@ -37,24 +37,24 @@ class StopWatchViewController: UIViewController {
         
         rapTable.edgesToSuperview(insets: TinyEdgeInsets(top: mainBoundSize.height/2, left: 0, bottom: 0, right: 0))
         rapTable.delegate = self
-        rapTable.register(UINib(nibName: "RapTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        rapTable.dataSource = self
+        rapTable.register(UINib(nibName: "RapTimeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
 }
 
-extension StopWatchViewController: UITableViewDelegate, UITableViewDataSource {
+extension StopWatchViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rapTimeList.count
+        return self.rapTimeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RapTableViewCell
-        
-        cell.configer(raptime: rapTimeList[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RapTimeTableViewCell
+        cell.congiger(num: rapTimeList[indexPath.row])
         return cell
     }
     
-    
 }
+
 
 
 
