@@ -14,6 +14,7 @@ class StopWatchViewController: UIViewController {
     let startButton = UIButton()
     let stopButton = UIButton()
     let rapTable = UITableView()
+    let timer = Timer()
     
     let mainBoundSize = UIScreen.main.bounds.size
     
