@@ -15,6 +15,9 @@ class RapTimeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = .black
+        rapTime.textColor = .white
+        rapNum.textColor = .white
         // Initialization code
     }
 
