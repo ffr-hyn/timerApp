@@ -93,6 +93,7 @@ class StopWatchViewController: UIViewController {
     
     private func updateTime() {
         timerLabel.text = "\(dispTime)"
+        
     }
     
 }
